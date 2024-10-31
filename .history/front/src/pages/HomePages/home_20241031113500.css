@@ -1,0 +1,92 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #0a66c2 !important;
+}
+
+.form-inline #search {
+    height: 34px;
+    background-color: #e1e9ee;
+    width: 100%;
+    border-radius: 2px;
+    padding-left: 40px;
+    color: rgba(40, 62, 74, .75);
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+}
+
+#space {
+    padding-left: 5rem;
+}
+
+#space li {
+    padding-right: 1.5rem;
+}
+
+#space li a {
+    text-align: center;
+    color: rgba(255, 255, 255, .75);
+}
+
+#space li a:hover,
+#space li a:focus {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.common-properties {
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+#left-card, #right-card, #new-post-container, #show-post-container {
+    margin-bottom: 20px;
+}
+
+#left-card {
+    height: auto;
+}
+
+#cover-picture {
+    height: 60px;
+    background-image: url('./images/cover-photo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#profile-picture {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.secondary-info {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#likes {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#like-option {
+    display: flex;
+    gap: 1rem;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-weight: bold;
+}

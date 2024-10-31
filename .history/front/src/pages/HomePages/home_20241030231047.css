@@ -1,0 +1,49 @@
+/* src/JobFeed.css */
+.job-feed {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .job-post {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-post h2 {
+    color: #0073b1;
+  }
+  
+  .job-post h3 {
+    color: #555;
+    font-weight: normal;
+  }
+  
+  .job-post p {
+    color: #777;
+  }
+  
+  .apply-button {
+    background: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .apply-button:hover {
+    background: #005582;
+  }
+  
