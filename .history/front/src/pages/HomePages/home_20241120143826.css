@@ -1,0 +1,198 @@
+/* General Background */
+body {
+    background-color: #f5f5f5 !important; /* Ensure background applies */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #852E4E !important;
+}
+
+.navbar .form-inline #search {
+    height: 34px;
+    background-color: #e1e9ee !important;
+    width: 100%;
+    border-radius: 2px;
+    padding-left: 40px;
+    color: rgba(40, 62, 74, 0.75) !important;
+    font-weight: 400;
+    font-size: 14px;
+    border: none !important;
+}
+
+/* Navbar Items */
+.navbar-nav#space {
+    padding-left: 5rem !important;
+}
+
+.navbar-nav#space li {
+    padding-right: 1.5rem;
+}
+
+.navbar-nav#space li a {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar-nav#space li a:hover,
+.navbar-nav#space li a:focus {
+    color: white !important;
+    border-bottom: 2px solid white !important;
+}
+
+/* Card and Post Containers */
+.common-properties {
+    background-color: white !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px !important;
+    padding: 15px !important;
+}
+
+#left-card,
+#right-card,
+#new-post-container,
+#show-post-container {
+    margin-bottom: 20px !important;
+}
+#profile-picture {
+    text-align: center;
+    padding: 15px 0;
+}
+#profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd !important;
+    transition: opacity 0.3s;
+}
+
+/* Button Styles */
+.btn {
+    background: none !important;
+    border: none !important;
+    color: #555 !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+}
+
+/* Like and Comment Section */
+#likes {
+    padding: 10px 0;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+#like-option {
+    display: flex !important;
+    gap: 1rem !important;
+    padding-top: 10px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Input Field with Icon */
+.input-icons {
+    position: relative; /* Set relative positioning for the container */
+    width: 100%; 
+}
+
+.input-icons i { 
+    position: absolute; 
+    left: 10px; /* Adjust left position of the icon */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center icon vertically */
+    color: rgba(40, 62, 74, 0.75); /* Match icon color */
+}
+
+#search {
+    height: 34px !important;
+    background-color: #e1e9ee !important;
+    width: 100% !important;
+    border-radius: 2px !important;
+    padding: 0 8px 0 40px !important; /* Adjust padding to accommodate the icon */
+    line-height: 1.75 !important;
+    color: rgba(40, 62, 74, 0.75) !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    border-color: #e1e9ee !important;
+    border: 0 !important;
+}
+/* Styling for the news section */
+#right-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .news-item {
+    margin-bottom: 20px;
+  }
+  
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .news-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .news-description {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #555;
+  }
+  
+  .news-date {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+  }
+  .news-list-container {
+    max-height: 600px; /* Adjust height as necessary */
+    overflow: hidden; /* Prevent scrollbar from appearing */
+    position: relative;
+}
+
+/* Ensure scroll buttons are always visible */
+.scroll-btn {
+    display: flex; /* Ensure both buttons are displayed */
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+.scroll-btn.down {
+    bottom: 10px; /* Adjust position as necessary */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 
+}
+
+.scroll-btn.up {
+    top: 10px; /* Adjust position as necessary */
+    left: 50%;
+    transform: translateX(-50%);
+}

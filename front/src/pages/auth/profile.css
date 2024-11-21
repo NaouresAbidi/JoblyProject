@@ -1,0 +1,163 @@
+.profile-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.profile-page h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.label {
+  flex: 1;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  flex: 2;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #852E4E;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4C1D3D;
+}
+
+span {
+  flex: 2;
+  color: #333;
+  font-size: 16px;
+}
+/* Wrapper for the profile picture */
+.profile-picture-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Profile picture styling */
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  transition: opacity 0.3s;
+}
+
+/* Overlay container */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Hover effect to reveal options */
+.profile-picture-wrapper:hover .hover-overlay {
+  opacity: 1;
+}
+
+/* Upload and View buttons */
+.upload-label, .view-button {
+  color: white;
+  font-size: 14px;
+  background: #852E4E;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.upload-label:hover, .view-button:hover {
+  background: #4C1D3D;
+}
+
+/* Hide the input file field */
+input[type="file"] {
+  display: none;
+}
+
+/* Modal for preview */
+.image-preview {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 5px;
+}
+
+.image-preview button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #852E4E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-preview button:hover {
+  background-color: #4C1D3D;
+}
+
+/* Background overlay for modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
